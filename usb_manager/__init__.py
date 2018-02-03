@@ -1,7 +1,7 @@
 import serial
 import serial.tools.list_ports
 
-class usbManager():
+class UsbManager():
     def __init__(self):
         self.usbDevices = serial.tools.list_ports.comports()
 

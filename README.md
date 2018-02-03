@@ -7,10 +7,10 @@ A Python library to interact with USB devices.
 from nfc_manager import usbManager
 
 # Show all usb devices with a vendor id of 1659
-usbManager().filterBy(vid="1659").show()
+UsbManager().filterBy(vid="1659").show()
 
 # Print the serial number of every devices with vendor id of 1659 and pid of 8963
-print(usbManager().filterBy(vid="1659", pid="8963").get("device"))
+print(UsbManager().filterBy(vid="1659", pid="8963").get("device"))
 ```
 
 # Filters and getters
