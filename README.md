@@ -4,7 +4,7 @@ A Python library to interact with USB devices.
 # Example code
 
 ``` python
-from nfc_manager import usbManager
+from usb_manager import UsbManager
 
 # Show all usb devices with a vendor id of 1659
 UsbManager().filterBy(vid="1659").show()
