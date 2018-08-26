@@ -2,8 +2,15 @@ import serial
 import serial.tools.list_ports
 
 class UsbManager():
-    def __init__(self):
-        self.usbDevices = serial.tools.list_ports.comports()
+    def __init__(self, testing=False):
+        if not testing:
+            self.usbDevices = serial.tools.list_ports.comports()
+        else:
+            ser = serial.Serial()
+            attrs = {"device": "tester", "vid": "1659", "pid": "8963", "serial_number": "",
+                     "manufacturer":"", "product": "", "location":"", "hwid":""}
+            ser.__dict__.update(attrs)
+            self.usbDevices = [ser]
 
     def filterBy(self, device="",vid="",pid="",serial_number="",manufacturer="",product="",location="",hwid=""):
         usbDevicesTmp = list()
