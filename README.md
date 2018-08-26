@@ -39,3 +39,9 @@ print(UsbManager().filterBy(vid="1659", pid="8963").get("device"))
 # Credits
 
 This (nano-)library is just an easy to use alias exclusivly based on [pyserial](https://pyserial.readthedocs.io/en/latest/tools.html).
+ 
+## Donation
+
+This project helped you ? You can buy me a cup of coffee  
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EWHGT3M9899J6)
+
