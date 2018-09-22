@@ -2,10 +2,10 @@
 A Python library to interact with USB devices.
 
 # Installation
-usb_manager is available on [pip](https://pypi.python.org/pypi/usb_manager/0.1). You can install it using :
+usb_manager is available on [pip](https://pypi.python.org/pypi/usb_manager). You can install it using :
 
 ``` shell
-pip install usb_manager
+pip install usb-manager
 ```
 
 # Example code

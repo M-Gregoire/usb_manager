@@ -1,7 +1,14 @@
 language: python
-python:
-  - "3.6"
+python: 3.6
 install:
-  - pip install -r requirements.txt
+- pip install coveralls nose
+- pip install .
 script:
-  - pytest
+- nosetests --with-coverage --cover-package=usb_manager
+after_success:
+- coveralls
+deploy:
+  provider: pypi
+  user: M-Gregoire
+  password:
+    secure: WxnLh8+gdiFJf2x42Js/9RzmTDzxsQ3iIvxVJztuLryvFUu9CKkJjVMy8wYdEQs+lD77fgfMAlMLnXRPBi+HB2JR1N5V1K/x9GkPBtjJ2Szdyi82IZeqG8HD9KzVqAiXy7C/ZCMqQRI5KFW0CNZGs0FfFE/GDNlyBTWc933qWYphL1t3EjMkA6Za5esWhUHsJOKjyHQ1w3KpFzTRWnib8RodzWhrhh6Ho7qznw9uOb0QQ2PWXrAT0mzc7W86FQR2+xsBUxjonjv6yT+Yy6NRHFSxrLiTLhpgdXVQl1kanuQ6Hx+zYJwiY+XgLZPgRVwZmS0MEMB+tlFDew8Ayp0aVoiP//CbYX7hNSxm41zV88a4ibR3JxFO5Yuzk2VnTgz4fRRdXVOUWXgKRkZ3mOngked/tornkwe1UoNlwxQoNQ9Ah6d45qPAr50ClnuerszaY1aUfiFMZYu/IwZp4lagrcYZaHhac3MXEJmNrm6TyU+v0F2h6D7f7Q6HrzFRhPy6vvb8qPPjVmD7/nWOsY7SGsh49p1KAbOMU0p91Sz5UJUwhDZEgUK8eCC6S5dtA9ZbXNrMthC5y6WsFqpNgtZs4TvX+wilfjkU4IGvRfqpBxJWHaO2XBdDpUpPd8C4JwAaTBLQ19dIv4o7rSakzeZjsU5A1bFVMUrsZ/9VBNxTKiQ=
