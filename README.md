@@ -1,4 +1,4 @@
-# usb_manager [![Build Status](https://travis-ci.org/M-Gregoire/usb_manager.svg?branch=master)](https://travis-ci.org/M-Gregoire/usb_manager)
+# usb_manager [![Build Status](https://travis-ci.org/M-Gregoire/usb_manager.svg?branch=master)](https://travis-ci.org/M-Gregoire/usb_manager) [![Coverage Status](https://coveralls.io/repos/github/M-Gregoire/usb_manager/badge.svg?branch=master)](https://coveralls.io/github/M-Gregoire/usb_manager?branch=master)
 A Python library to interact with USB devices.
 
 # Installation
