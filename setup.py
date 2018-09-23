@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='usb_manager',
-    version='1.0',
+    version='1.0.0',
     packages=['usb_manager'],
     install_requires=[
         'pyserial',
